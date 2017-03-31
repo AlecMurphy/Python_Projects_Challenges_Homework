@@ -1,0 +1,135 @@
+#sleep_in
+def sleep_in(weekday, vacation):
+  if vacation == True: 
+    return True 
+  if weekday == False: 
+    return True
+  else: 
+    return False 
+
+#monkey_trouble
+def monkey_trouble(a_smile, b_smile):
+  if a_smile == True and b_smile == True: 
+    return True
+  elif a_smile == False and b_smile == False: 
+    return True
+  else:
+    return False 
+    
+
+#sum_double
+def sum_double(a, b):
+  if a == b:
+    sum_double = (a*2)+(b*2)
+    return sum_double
+  else:
+    sum_double = a+b
+    return sum_double
+
+
+#diff21
+def diff21(n):
+  diff = 21 - n 
+  if diff < 0:
+    diff = diff * -1
+  if n > 21:
+    diff = diff * 2
+  return diff 
+  
+  
+#parrot_trouble
+def parrot_trouble(talking, hour):
+  if not talking: 
+    return False 
+  if talking == True  and (hour < 7) or (hour > 20):
+    return True
+  else: 
+    return False 
+
+
+#makes10
+def makes10(a, b):
+  if a == 10 or b == 10: 
+    return True 
+  if a+b == 10: 
+    return True 
+  else: 
+    return False 
+    
+    
+#near_hundred
+def near_hundred(n):
+  diff100 = 100 - n 
+  diff200 = 200 - n 
+  diff100 = abs(diff100)
+  diff200 = abs(diff200)
+  if diff100 in range (11) or diff200 in range (11):
+    return True 
+  else: 
+    return False
+    
+    
+    
+#pos_neg
+def pos_neg(a, b, negative):
+  if negative:
+    if a < 0 and b < 0: 
+      return True
+    else: 
+      return False 
+  if a < 0 and b > 0:
+    return True 
+  if a > 0 and b < 0: 
+    return True 
+  else: 
+    return False 
+
+
+
+
+#not_string
+def not_string(str):
+  n = 'not' 
+  if str[0:3] == n:
+    return str
+  else: 
+    str = n+" "+str
+    return str
+    
+    
+    
+#missing_char
+def missing_char(str, n):
+  s = 0 
+  new = ''
+  for s in range(0,len(str),1):
+    if s == n:
+      s += 1
+    else:
+      new += str[s]
+  return new
+  
+  
+  
+#front_back
+def front_back(str):
+  if len(str) <= 1:
+    return str
+  front = str[-1]
+  middle = str[1:len(str)-1]
+  end = str[0]
+  new = front+middle+end
+  return new
+  
+  
+  
+#front3
+def front3(str):
+  if len(str) < 3:
+    new = str*3
+  else: 
+    new = str[:3]*3
+  return new 
+  
+  
+  
